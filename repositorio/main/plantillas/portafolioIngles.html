@@ -1,0 +1,51 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - My Portfolio</title>
+    <link rel="stylesheet" href="{% static 'ccs/portafolio.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'mainIngles' %}">Home</a></li>
+            <li><a href="{% url 'contactoIngles' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div>
+         <h1>Your Portfolio</h1> <br> <br> <br>
+    
+   
+
+    <div class="divProyectos">
+
+        <div class="proyecto">
+            <h2>Online Store</h2>
+            <p>This Java code implements an application to manage a product database using the ProductDatabase class, which utilizes a map to store products with operations to add, update, and delete products, as well as to calculate statistics. The Product class defines the properties of each product. In the main method of the App class, products are initialized, operations are read and executed from user input, and statistics such as the most expensive product, the cheapest product, the average price, and the total inventory value are calculated.</p>
+            <a href="https://github.com/valeriazuleta/Tienda.git">Repository</a>
+           
+        </div>
+        <div class="proyecto">
+            <h2>Students CRUD</h1>
+            <p>This Python code implements a system to manage students, subjects, and grades, with various functionalities accessible through an interactive menu. Student, subject, and grade data are stored in lists. The main menu offers options to add students, subjects, and grades, view the average grade per student, view the highest grade of a student, view the lowest grade per subject, and list students. Each menu option calls a specific function that performs the corresponding operations, including input validation and updating the data lists. The program continues to run until the user chooses to exit.</p>
+            <a href="https://github.com/valeriazuleta/Crud_Estudiante.git">Repository</a>
+    
+        </div>
+        <div class="proyecto">
+            <h2>Library Management</h2>
+            <p>The code implements a management system for a library with interactive menus in the console, allowing the administration of clients, books, sales, and statistics. It provides functions to add, list, update, search, and delete records of clients, books, and sales, as well as generate statistics such as total sales by ISBN, most and least sold books, and clients with the highest purchases. This system facilitates comprehensive library management through a simple and efficient interface.</p>
+            <a href="https://github.com/valeriazuleta/Crud_Libreria.git">Repository</a>
+    
+        </div>
+
+    </div>
+    </div>
+   
+</body>
+</html>

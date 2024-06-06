@@ -1,0 +1,41 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - My Portfolio</title>
+    <link rel="stylesheet" href="{% static 'ccs/contacto.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+    <h1>Contact  Information</h1>
+
+    <div class="informacion">
+
+        <div class="informacion">
+            <h2>Information</h2>
+            <p>Name: valeria zuleta</p>
+            <p>Phone: 3045318752</p>
+            <p>Address: cra35c3#83c-52</p>
+            <p>Email: <a href="mailto:{{ contact_info.email }}">vzuleta058@gmail.com</a></p>
+        </div>
+        <div class="profile-picture">
+            <a href="https://www.linkedin.com/in/valeria-zuleta-26a332312/"><img src="{% static 'imagenes/linkedin.png' %}" alt="valeria"></a>
+            <a href="https://github.com/"><img src="{% static 'imagenes/github.png' %}" alt="valeria"></a>
+        </div>
+
+    </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{% url 'mainIngles' %}">Home</a></li>
+            <li><a href="{% url 'portafolioIngles' %}">Portfolio</a></li>
+            
+        </ul>
+    </nav>
+</body>
+</html>

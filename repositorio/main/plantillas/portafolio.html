@@ -1,0 +1,51 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - My Portfolio</title>
+    <link rel="stylesheet" href="{% static 'ccs/portafolio.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'main' %}">inicio</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+        </ul>.
+    </nav>
+
+    <div>
+         <h1>Mi Portafolio</h1> <br> <br> <br>
+    
+   
+
+    <div class="divProyectos">
+
+        <div class="proyecto">
+            <h2>Tienda Online</h2>
+            <p>Este código en Java implementa una aplicación para gestionar una base de datos de productos mediante la clase `BaseDeDatosProducto`, que utiliza un mapa para almacenar productos con operaciones para agregar, actualizar y eliminar productos, así como para calcular estadísticas. La clase `Producto` define las propiedades de cada producto. En el método `main` de la clase `App`, se inicializan productos, se leen y ejecutan operaciones desde la entrada del usuario, y se calculan estadísticas como el producto más caro, el más barato, el promedio de precios y el valor total del inventario..</p>
+            <a href="https://github.com/valeriazuleta/Tienda.git">Repositorio</a>
+           
+        </div>
+        <div class="proyecto">
+            <h2>Crud-Estudiantes</h1>
+            <p>Este código en Python implementa un sistema para gestionar estudiantes, materias y notas, con varias funcionalidades accesibles a través de un menú interactivo. Los datos de estudiantes, materias y notas se almacenan en listas. El menú principal ofrece opciones para agregar estudiantes, materias y notas, ver el promedio de notas por estudiante, ver la nota mayor de un estudiante, ver la nota menor por materia y listar estudiantes. Cada opción del menú llama a una función específica que realiza las operaciones correspondientes, incluyendo la validación de entradas y la actualización de las listas de datos. El programa sigue ejecutándose hasta que el usuario elige salir.</p>
+            <a href="https://github.com/valeriazuleta/Crud_Estudiante.git">Repositorio</a>
+    
+        </div>
+        <div class="proyecto">
+            <h2>Gestión de Librería</h2>
+            <p>El código implementa un sistema de gestión para una librería con menús interactivos en la consola, permitiendo administrar clientes, libros, ventas y estadísticas. Ofrece funciones para agregar, listar, actualizar, buscar y eliminar registros de clientes, libros y ventas, además de generar estadísticas como ventas totales por ISBN, libros más y menos vendidos, y clientes con mayores compras. Este sistema facilita la gestión integral de una librería mediante una interfaz sencilla y eficiente.</p>
+            <a href="https://github.com/valeriazuleta/Crud_Libreria.git">Repositorio</a>
+    
+        </div>
+
+    </div>
+    </div>
+   
+</body>
+</html>

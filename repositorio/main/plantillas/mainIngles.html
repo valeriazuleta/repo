@@ -1,0 +1,44 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeria Zuleta's Portfolio </title>
+    <link rel="stylesheet" href="{% static 'ccs/stilo.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="banderas">
+        <a href="{% url 'main' %}"><img src="{% static 'imagenes/bandera.png' %}" alt="valeria"></a>
+        <a href="{% url 'mainIngles' %}"><img src="{% static 'imagenes/reino-unido.png' %}" alt="valeria"></a>
+    </div>
+<div class="container">
+    <div class="profile-info">
+        <h1>Welcome to my Portfolio</h1>
+        <p> "Hello! My name is Valeria Zuleta and this is my portfolio created with Django."</p>
+        <p>Explora my projects and get in touch with me if you're interested in working together.</p>
+    </div>
+    <div class="profile-picture">
+        <img src="{% static 'imagenes/avatar.jpeg' %}" alt="valeria">
+    </div>
+
+</div>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'portafolioIngles' %}">Portfolio</a></li>
+            <li><a href="{% url 'contactoIngles' %}">Contact</a></li>
+           
+        </ul>
+        
+    </nav>
+    
+</body>
+</html>
+
+
+

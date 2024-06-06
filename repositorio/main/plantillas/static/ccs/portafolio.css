@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eae5ff;
+    color: #333;
+    border:5px solid rgb(214, 160, 216);
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+
+}
+
+h1 {
+    font-size: 60px;
+    text-align: left;
+    margin-top: -700px;
+    margin-bottom: 10px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: -40px;
+    
+
+    
+}
+
+
+
+
+a {
+    color: #a838be;
+    text-decoration: none;
+}
+
+nav {
+    text-align: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.divProyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+
+}
+
+.proyecto{
+    background-color: rgb(252, 250, 248);
+    height: 500px;
+    width: 500px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.proyecto p{
+    text-align: justify;
+    padding: 10px;
+    font-family:cursive;
+    font-size: 17px;
+}
+
+.proyecto a{
+    text-decoration: none;
+    margin-left: 20px;
+    background-color: #d5b0db;
+    color: aliceblue;
+    font-size: 25px;
+}
